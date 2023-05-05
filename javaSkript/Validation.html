@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation on login Page</title>
+    <script type="text/javascript">
+
+        function validate(){
+
+            email  = document.getElementById("login").value.indexOf("@");
+            fname = document.getElementById("fname").value;
+            submit = true;
+
+            if(email == -1){
+                alert("the email os invalid");
+
+                submit = false;
+
+            }else if(fname.length > 2){
+                alert("first name cannot be this long");
+
+                submit = false;
+
+            }
+            if(submit == false){
+
+                return false;
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <form onsubmit="return validate()">
+        <table>
+            <tr>
+                <td>
+                    <h2>login Id</h2>
+
+                </td>
+                <td><h2 style="color: red;">*</h2></td>
+                <td><input type="text" id="login" placeholder="Enter Login id"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>First Name<h2 style="color: red;">*</h2></h2>
+
+                </td>
+                <td><input type="text" id="fname" placeholder="Enter first name"> </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>

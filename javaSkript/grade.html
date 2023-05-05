@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+
+	<form onsubmit="return calculateGrade()">
+
+	<h1> Enter the marks: </h1>
+	<input type="text" id="marks" placeholder="enter the marks">
+
+	<input type="submit" id="submit" name="submit" value="Click Me">
+
+</form>
+
+
+
+	<script type="text/javascript">
+
+		function calculateGrade(){
+
+		
+		
+		x=document.getElementById("marks").value;
+		document.write("the value of x is : "+ x);
+
+		
+		if (x>=95) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>A++ </h1>");
+		}else if (x>=85) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>A+ </h1>");
+		}else if (x>=75) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>A </h1>");
+		}else if (x>=65) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>B </h1>");
+		}else if (x>=55) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>C </h1>");
+		}else if (x>=45) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>D </h1>");
+		}else if (x>=35) {
+			document.write("<h1 style ='color:yellow;background-color:black;'>Sorry you are failed</h1>");
+		}
+	}
+
+			
+		
+	</script>
+	
+</center>
+</body>
+</html>

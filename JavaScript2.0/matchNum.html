@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        function match(){
+            num = document.getElementById("num").value;
+            max = 100;
+            min =1 ;
+            a = Math.floor((Math.random()*(max-min+1))+min);;
+            if(num == a){
+                document.getElementById("result").value = "Good Job";
+                
+
+            }else{
+                document.getElementById("result").value = "Not Matched"
+            }
+            document.getElementById("result2").innerHTML = "The Number is: "+a;
+        }
+    </script>
+</head>
+<body style="background-color: tan;">
+    <center>
+        <h1 ><b> Enter a Number</b> </h1>
+
+    
+    <table>
+        <tr>
+            <td>
+                <input  style="border-color: green;" type="text" id="num" placeholder="enter no. b/w 1-100">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="border-radius: 20px; background-color: blue; border-color: darkblue ; color: azure;" onclick="match()"> Match</button>
+            </td>
+        </tr>
+
+    </table>
+
+    <input style="border-color: red;" type="text" id="result">
+
+    <div id ="result2"></div>
+
+</center>
+    
+</body>
+</html>

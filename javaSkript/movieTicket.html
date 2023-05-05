@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+
+
+	<form onsubmit="return calculate()">
+
+		<center>
+	<table>
+		<tr>
+			<td><h2 style="color: yellow;background-color: black;"> Enter the ammount: </h2> </td>
+			<td><input type="text" id="amount" placeholder="enter ammount in rupees"> </td>
+		</tr>
+	</table>
+	<input type="submit" value="Click me " name="submit">
+	
+	
+</center>
+	</form>
+	<script type="text/javascript">
+
+		function calculate(){
+		budget = document.getElementById("amount").value;
+		if(budget >=400){
+			 document.write("<h1 style ='color:red;background-color:yellow;'>Can buy Avengers SpiderMan No way home and popcorn , cold drink c nachoos</h1>");
+
+		}else if(budget >=300){
+			 document.write("<h1 style ='color:red;background-color:yellow;'>Can buy Sardar uDHAM sINGH AND popcorn,cold drink</h1>");
+
+		}else if(budget >=200){
+			 document.write("<h1 style ='color:red;background-color:yellow;'>Can buy bell bottom </h1>");
+
+		}else if(budget >=100){
+			 document.write("<h1 style ='color:red;background-color:yellow;'>Can buy hungama 2 </h1>");
+
+		}else if(budget <=100){
+			 document.write("<h1 style ='color:red;background-color:yellow;'>samosa khale or ghr chl</h1>");
+
+		}
+	}
+
+	</script>
+</center>
+</body>
+</html>

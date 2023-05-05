@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+
+        function validate(){
+            rate1 = document.getElementsByName("rate1");
+            for(i = 0 ; i<rate1.length ; i++){
+
+            }
+
+
+            tag = true;
+        }
+
+    </script>
+    <style>
+        .select{
+
+            background-color: rgb(186, 216, 237);
+            text-align: center;
+        }
+        .button{
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 5px;
+            border-color: darkblue ;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        <fieldset>
+            <h1>Post event questionnaire</h1>
+            <h4 style="color: red;"></h4>
+        <table>
+            <tr>
+                Overall, how satisfied were you with the event?<font style="color: red;"> *</font>
+
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    Very Satisfied
+                </th>
+                <th>
+                    Somwhat sastisfied
+                </th>
+                <th>
+                    neither satisfied nor dissapointed
+                </th>
+                <th>
+                    somewhat dissapointed
+                </th>
+                <th>
+                    Very dissapointed
+                </th>
+            </tr>
+            <tr></tr>
+            
+            <tr class="select">
+                <td>Please select one</td>
+                <td>
+                   <input type="radio" id="rate1">
+                </td>
+                <td>
+                    <input type="radio" id="rate1">
+                </td>
+                <td>
+                    <input type="radio" id="rate1">
+                </td>
+                <td>
+                    <input type="radio" id="rate1">
+                </td>
+                <td>
+                    <input type="radio" id="rate1">
+                </td>
+            </tr>
+        </table>
+
+
+
+        <table>
+                
+                How likely are you to participate in one of our events in the future? <font style="color: red;">*</font>
+            
+            
+            <tr>
+                <td>
+                    <input type="radio" id="rate2">
+                    Somewhat likely
+                </td>
+            </tr>
+                <tr>
+                <td>
+                    <input type="radio" id="rate2">
+                    Somewhat unlikely
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="rate2">
+                    Very unlikely
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="rate2">
+                    Very likely
+                </td>
+
+            </tr>
+        
+        </table>
+        <table>
+            <tr>
+                <td>What was your favorite part of the event? <font style="color: red;">*</font> </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="ans1">
+                </td>
+            </tr>
+            <tr>
+                <td>What was your least favorite part of the event? <font style="color: red;">*</font> </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="ans2">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <th>
+                On a scale of 1-10, how helpful was the staff? <font style="color: red;">*</font>
+            </th>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                
+                <th></th>
+            </tr>
+            <tr class="select">
+                <td>
+                    Very unhelpful
+                </td>
+                <td >
+                    <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                    <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                     <input type="radio" id="rate3">
+                 </td>
+                 <td>
+                    Very helpful
+                </td>
+            </tr>
+        </table>
+        
+        <input class="button" type="submit" value="SUBMIT">
+
+    </fieldset>
+
+    </form>
+
+    
+</body>
+</html>

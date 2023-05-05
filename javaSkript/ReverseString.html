@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+     
+
+	<table>
+		<tr>
+			<td><h2>Enter the text: </h2></td>
+			<td><input type="text" id="str" placeholder="entre any text"> </td>
+
+		</tr>
+	</table>
+
+	<button onclick="return reverse()">Reverse</button>
+
+
+	<script type="text/javascript">
+
+		function reverse(){
+		y = document.getElementById("str").value;
+		name = y.split(" ");
+		document.write("<h1 style ='color:black;background-color:yellow;'>");
+		for(i=y.length-1 ; i>=0 ; i--){
+			document.write(name[i]);
+
+		}
+        document.write("</h1>");
+
+	}
+	</script>
+	</center>
+
+</body>
+</html>
